@@ -20,7 +20,7 @@ Psample {
 // 	}
 // }
 
-Pmidi {
+Pzmidi {
 	*new { |midiout, ch=0|
 		^Pbind(\type, \midi, \midiout, midiout, \chan, ch);
 	}
