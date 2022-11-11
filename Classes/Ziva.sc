@@ -66,6 +66,7 @@ Ziva {
 			// this.makeTracks(4);
 			"r = \\r".interpret;
 			this.clock = TempoClock.default;
+      this.makeTracks(4);
 
 		};
 		^this.server;
