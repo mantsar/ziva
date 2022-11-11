@@ -99,7 +99,7 @@ Ziva {
 
 	/// \brief load samples
 	*loadSounds {
-		"loading sounds".debug;
+		// "loading sounds".debug;
 		this.loadSynths;
 		this.loadSamples(Platform.userAppSupportDir++"/downloaded-quarks/ziva/samples");
 	}
@@ -116,7 +116,8 @@ Ziva {
 				(dirt:this).use { filepath.load };
 				"loading synthdefs in %\n".postf(filepath);
 			}
-		}
+		};
+    "loaded ziva synthdefs".postln;
 	}
 
 	/// \brief Return a list of all compiled SynthDef names
