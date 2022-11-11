@@ -51,7 +51,7 @@ Ziva {
 		numBuffers = 16, memSize = 32, maxNodes = 32|
 		server = server ? Server.default;
 		this.server = server;
-		this.serverOptions(this.server, inputChannels, outputChannels, numBuffers, memSize, maxNodes);
+		// this.serverOptions(this.server, inputChannels, outputChannels, numBuffers, memSize, maxNodes);
 
 		// gets called when server boots
 		// see: https://doc.sccode.org/Overviews/Methods.html#initTree
@@ -65,7 +65,7 @@ Ziva {
 			// this.makeRhythmsDict;
 			// this.makeTracks(4);
 			"r = \\r".interpret;
-			this.clock = TempoClock.new;
+			this.clock = TempoClock.default;
 
 		};
 		^this.server;
