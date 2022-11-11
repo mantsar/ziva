@@ -114,7 +114,7 @@ Ziva {
 		filePaths.do { |filepath|
 			if(filepath.splitext.last == "scd") {
 				(dirt:this).use { filepath.load };
-				"loading synthdefs in %\n".postf(filepath);
+				// "loading synthdefs in %\n".postf(filepath);
 			}
 		};
     "loaded ziva synthdefs".postln;
