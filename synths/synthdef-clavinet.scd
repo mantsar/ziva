@@ -1,5 +1,5 @@
 (
-SynthDef(\clavinet, {
+SynthDef(\zclavinet, {
 	var feedback = \feedback.kr(0.8);
 	var amp = \amp.kr(0.3);
 	var spread = \spread.kr(0.8);

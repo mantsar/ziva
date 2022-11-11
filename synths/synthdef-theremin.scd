@@ -17,7 +17,7 @@
 // a = Synth(\theremin)
 
 (
-SynthDef(\theremin, {
+SynthDef(\ztheremin, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);

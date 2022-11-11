@@ -1,5 +1,5 @@
 (
-SynthDef(\soskick,
+SynthDef(\zsoskick,
 	{ arg out = 0, freq = 50, mod_freq = 5, mod_index = 5, sustain = 0.4, amp = 0.8, beater_noise_level = 0.025;
 	var pitch_contour, drum_osc, drum_lpf, drum_env;
 	var beater_source, beater_hpf, beater_lpf, lpf_cutoff_contour, beater_env;
@@ -22,7 +22,7 @@ SynthDef(\soskick,
 	}
 	).add;
 
-SynthDef(\sossnare,
+SynthDef(\zsossnare,
 	{arg out = 0, sustain = 0.1, drum_mode_level = 0.25,
 	snare_level = 40, snare_tightness = 1000,
 	freq = 405, amp = 0.8;
@@ -55,7 +55,7 @@ SynthDef(\sossnare,
 	}
 ).add;
 
-SynthDef(\soshats,
+SynthDef(\zsoshats,
 	{arg out = 0, freq = 6000, sustain = 0.1, amp = 0.8;
 	var root_cymbal, root_cymbal_square, root_cymbal_pmosc;
 	var initial_bpf_contour, initial_bpf, initial_env;
@@ -78,7 +78,7 @@ SynthDef(\soshats,
 	Out.ar(out, [cymbal_mix, cymbal_mix])
 	}).add;
 
-SynthDef(\sostom,
+SynthDef(\zsostom,
 	{arg out = 0, sustain = 0.4, drum_mode_level = 0.25,
 	freq = 90, drum_timbre = 1.0, amp = 0.8;
 	var drum_mode_sin_1, drum_mode_sin_2, drum_mode_pmosc, drum_mode_mix, drum_mode_env;

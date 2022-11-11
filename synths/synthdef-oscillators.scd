@@ -1,5 +1,5 @@
 (
-SynthDef(\white, {
+SynthDef(\zwhite, {
 	var out = \out.kr(0);
 	var pan = \pan.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
@@ -13,7 +13,7 @@ SynthDef(\white, {
 	Out.ar(out, Pan2.ar(sig * env, pan));
 }).add;
 
-SynthDef(\pink, {
+SynthDef(\zpink, {
 	var out = \out.kr(0);
 	var pan = \pan.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
@@ -27,7 +27,7 @@ SynthDef(\pink, {
 	Out.ar(out, Pan2.ar(sig * env, pan));
 }).add;
 
-SynthDef(\brown, {
+SynthDef(\zbrown, {
 	var out = \out.kr(0);
 	var pan = \pan.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
@@ -41,7 +41,7 @@ SynthDef(\brown, {
 	Out.ar(out, Pan2.ar(sig * env, pan));
 }).add;
 
-SynthDef(\sine, {
+SynthDef(\zsine, {
 	var out = \out.kr(0);
 	var pan = \pan.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
@@ -57,7 +57,7 @@ SynthDef(\sine, {
 	Out.ar(out, Pan2.ar(sig * env, pan));
 }).add;
 
-SynthDef(\saw, {
+SynthDef(\zsaw, {
 	var out = \out.kr(0);
 	var pan = \pan.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
@@ -72,7 +72,7 @@ SynthDef(\saw, {
 	Out.ar(out, Pan2.ar(sig * env, pan));
 }).add;
 
-SynthDef(\pulse, {
+SynthDef(\zpulse, {
 	var out = \out.kr(0);
 	var amp = \amp.kr(1) * (-12.dbamp);
 	var pan = \pan.kr(0);

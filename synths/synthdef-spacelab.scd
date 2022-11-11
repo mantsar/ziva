@@ -78,7 +78,7 @@ SynthDef(\kwbass, { | out=0 gate=1 freq amp=1|
 SynthDef(\kwsaw, { | out=0 freq t_trig=1 gate=1 amp=1 atk=0 dec=0.3, sus=1 rel=3|
 	var trig, div,  oct, reps, env, osc, flt;
 	oct = [0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3];
-	trig = Impulse.kr(EnvGen.kr(Env([1.75, 120], [30], 6.5)), doneAction:2);
+	trig = Impulse.kr(EnvGen.kr(Env([1.75, 120], [30], 6.5), doneAction:2));
 	// trig = t_trig;
 	div = PulseDivider.kr(trig, 16, 16);
 	reps = PulseCount.kr(div);

@@ -1,5 +1,5 @@
 (
-SynthDef(\karplus2, {
+SynthDef(\zkarplus2, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);
@@ -28,7 +28,7 @@ SynthDef(\karplus2, {
     Out.ar(out, Pan2.ar(sig * amp, pan));
 }).add;
 
-SynthDef(\karplus, {
+SynthDef(\zkarplus, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);

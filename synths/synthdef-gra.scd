@@ -1,5 +1,5 @@
 (
-SynthDef(\gra, {
+SynthDef(\zgra, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);

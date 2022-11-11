@@ -1,5 +1,5 @@
 (
-SynthDef(\acid, {
+SynthDef(\zacid, {
 	var out = \out.kr(0);
 	var sutain = \sustain.kr(1);
 	var pan = \pan.kr(0);

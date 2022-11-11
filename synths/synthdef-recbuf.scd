@@ -1,5 +1,5 @@
 (
-SynthDef(\recbuf, { |monitor=1|
+SynthDef(\zrecbuf, { |monitor=1|
 	var out = \out.kr(0);
 	var amp = \amp.kr(1);
 	var buf = \buf.kr(0);

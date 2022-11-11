@@ -1,6 +1,6 @@
 // from "/Applications/SuperCollider/examples/demonstrations/stealthissound.scd"
 (
-SynthDef(\prophet,{|out= 0 freq = 440 amp = 1.0 gate=1 lforate = 10 lfowidth= 0.5 cutoff= 12000 rq=0.5 pan = 0.0|
+SynthDef(\zprophet,{|out= 0 freq = 440 amp = 1.0 gate=1 lforate = 10 lfowidth= 0.5 cutoff= 12000 rq=0.5 pan = 0.0|
 
 	var lfo, pulse, filter, env;
 

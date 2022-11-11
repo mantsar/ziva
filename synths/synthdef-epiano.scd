@@ -1,6 +1,6 @@
 // dx7 Hammond2
 (
-SynthDef(\epiano, {
+SynthDef(\zepiano, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);
@@ -59,7 +59,7 @@ SynthDef(\epiano, {
 // */
 
 (
-SynthDef(\rhodes, {
+SynthDef(\zrhodes, {
     // |
     // // standard meanings
     // out = 0, freq = 440, gate = 1, pan = 0, amp = 0.1,

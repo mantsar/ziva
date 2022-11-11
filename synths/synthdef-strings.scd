@@ -1,5 +1,5 @@
 (
-SynthDef(\strings, { arg out, freq=440, amp=0.1, gate=1, pan, freqLag=0.2;
+SynthDef(\zstrings, { arg out, freq=440, amp=0.1, gate=1, pan, freqLag=0.2;
 					var env, in, delay, f1, f2;
 					f1 = freq.lag(freqLag);
 					f2 = freq.lag(freqLag * 0.5);

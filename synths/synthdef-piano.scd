@@ -4,7 +4,7 @@
 // Organized by Zé Craum
 // Examples at: http://sccode.org/1-5aE
 (
-SynthDef(\piano, {
+SynthDef(\zpiano, {
     var out = \out.kr(0);
     var pan = \pan.kr(0);
     var freq = \freq.kr(440);

@@ -1,5 +1,5 @@
 (
-SynthDef(\fmbass, {
+SynthDef(\zfmbass, {
 	var lfofreq = \lfofreq.kr(1);
 	var lfodepth = \lfodepth.kr(0);
 	var freq = \freq.kr(440);// - (24.midicps); // 2 octaves down by default

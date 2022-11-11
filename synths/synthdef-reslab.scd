@@ -1,5 +1,5 @@
 (
-SynthDef(\reslab, {
+SynthDef(\zreslab, {
 	var freq = \freq.kr(440);
 	var amp = \amp.kr(1);
 	var out = \out.kr(0);
