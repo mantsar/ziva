@@ -109,7 +109,7 @@ Ziva {
 		// load synthdesclib
 		// "loading synths".debug;
 		var filePaths;
-		path = path ?? { "../synths".resolveRelative };
+		path = path ??? { "../synths".resolveRelative };
 		filePaths = pathMatch(standardizePath(path +/+ "*"));
 		filePaths.do { |filepath|
 			if(filepath.splitext.last == "scd") {

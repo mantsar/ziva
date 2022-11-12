@@ -24,7 +24,7 @@
         ^Pseq(this, repeats);
     }
 
-    ?? { | repeats |
+    ??? { | repeats |
         if (repeats <= 0) { repeats = inf };
         ^Prand(this, repeats);
     }

@@ -56,7 +56,7 @@
 		};
 
 		notes = notes.asArray;
-		modulo = degreesPerOctave ?? notes.copy.sort.last;
+		modulo = degreesPerOctave ??? notes.copy.sort.last;
 		notes = notes.mod(modulo * octaves);
 
 		// durations are offset by 1 position. To align them to the notes we
